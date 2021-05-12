@@ -1,0 +1,52 @@
+
+body{
+    background-color: #0e4b79;
+}
+    
+.imagen {
+    background-image: url("media/imagen1.jpg");
+    height: 600px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.contenido1 {
+    padding-top: 150px;
+    margin-right: 800px;
+    margin-left: 150px;
+}
+
+.embed-container {
+    position: relative;
+    height: 0;
+    padding-bottom: 80%;
+    max-width: 100%;
+
+    
+}
+
+.embed-container iframe
+
+ {
+    position: absolute;
+    width: 100%;
+    height: 2030px;
+    padding-right: 600px;
+    padding-left: 50px;
+    border-radius: 25px;
+    
+}
+
+small {
+    position: absolute;
+    z-index: 40;
+    bottom: 0;
+    margin-bottom: -15px;
+    
+}
+
+.azul{
+    background-color: #1959c2;
+    height: 30px;
+}
