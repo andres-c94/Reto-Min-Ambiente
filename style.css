@@ -1,52 +1,176 @@
-
-body{
-    background-color: #0e4b79;
+.sky{
+    background-image: url("media/logo1.PNG");
+    height: 40px;
 }
-    
-.imagen {
+.sky p{
+    margin-left: 20px;
+}
+
+.nav{
+    background-image: url("media/menú.PNG");
+    height: 63px;
+}
+
+.fondo{
     background-image: url("media/imagen1.jpg");
-    height: 600px;
+    height: 500px;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-
 .contenido1 {
     padding-top: 150px;
-    margin-right: 800px;
+    margin-right: 700px;
     margin-left: 150px;
 }
 
-.embed-container {
-    position: relative;
-    height: 0;
-    padding-bottom: 80%;
-    max-width: 100%;
-
-    
+.division1{
+    margin-top: -1635px;
+    background-color: whitesmoke;
+    margin-right: 500px;
+    margin-left: 100px;
+    padding: 20px;
+    border-radius: 15px;
+    border-style: solid;
+    border-color: #e9f1fc;
+    border-width: 1px;
 }
 
-.embed-container iframe
+.division1 label {
+    margin-left: 20px;
+    margin-top: 15px;
+}
 
- {
-    position: absolute;
+.division1 input{
+    height: 50px;
+    border-radius: 10px;
     width: 100%;
-    height: 2030px;
-    padding-right: 600px;
-    padding-left: 50px;
-    border-radius: 25px;
-    
+    margin-top: 5px;
 }
 
-small {
-    position: absolute;
-    z-index: 40;
-    bottom: 0;
-    margin-bottom: -15px;
-    
+.form-select{
+    height: 50px;
+    border-radius: 20px;
 }
 
-.azul{
-    background-color: #1959c2;
-    height: 30px;
+.division2{
+    margin-top: 15px;
+    background-color: whitesmoke;
+    margin-right: 500px;
+    margin-left: 100px;
+    padding: 20px;
+    border-radius: 15px;
+    border-style: solid;
+    border-color: #e9f1fc;
+    border-width: 1px;
 }
+h3{
+    color:#004884;
+}
+
+.division2 label {
+    margin-left: 20px;
+    margin-top: 15px;
+}
+
+.division2 input{
+    height: 50px;
+    border-radius: 10px;
+    width: 100%;
+    margin-top: 5px;
+}
+
+.mapa{
+    margin-top: 15px;
+    background-color: grey;
+    height: 500px;
+    border-radius: 10px;
+}
+
+.division3{
+    margin-top: 15px;
+    background-color: whitesmoke;
+    margin-right: 500px;
+    margin-left: 100px;
+    padding: 20px;
+    border-radius: 15px;
+    border-style: solid;
+    border-color: #e9f1fc;
+    border-width: 1px;
+}
+
+.division4{
+    margin-top: 15px;
+    background-color: whitesmoke;
+    margin-right: 500px;
+    margin-left: 100px;
+    padding: 20px;
+    border-radius: 15px;
+    border-style: solid;
+    border-color: #e9f1fc;
+    border-width: 1px;
+}
+
+.division5{
+    margin-top: 15px;
+    background-color: whitesmoke;
+    margin-right: 500px;
+    margin-left: 100px;
+    padding: 20px;
+    border-radius: 15px;
+    border-style: solid;
+    border-color: #e9f1fc;
+    border-width: 1px;
+}
+.division5 img{
+    margin-top: 10px;
+}
+
+.division6{
+    margin-top: 15px;
+    margin-right: 500px;
+    margin-left: 100px;
+    padding: 20px;
+    border-radius: 15px;
+    border-style: solid;
+    border-color: #e9f1fc;
+    border-width: 1px;
+}
+
+.btn-primary{
+    margin-left: 27%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 150px;
+    height: 60px;
+    border-radius: 40px !important;
+}
+
+.mapa #map8{
+    height: 100%;
+    width: 100%;
+} 
+
+.animacion{
+    animation-duration: 3s;
+    animation-name: slidein;
+    animation-iteration-count: infinite;
+}
+
+.tarjeta1{
+    margin-left: 900px;  
+}
+
+.tarjeta2{
+    margin-left: 900px;  
+}
+
+
+.tarjeta3{
+    margin-left: 900px;  
+}
+
+.tarjeta4{
+    margin-left: 900px;  
+}
+

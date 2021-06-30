@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- BOOSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+        crossorigin="anonymous"></script>
+
+    <!-- linkear archivos CSS Y JAVA NECESARIOS  -->
+    <link rel="stylesheet" href="https://js.arcgis.com/4.19/esri/themes/light/main.css">
+
+    <script src="https://unpkg.com/@esri/arcgis-rest-request@3.0.0/dist/umd/request.umd.js"></script>
+    <script src="https://unpkg.com/@esri/arcgis-rest-auth@3.0.0/dist/umd/auth.umd.js"></script>
+    <script src="https://unpkg.com/@esri/arcgis-rest-feature-layer@3.0.0/dist/umd/feature-layer.umd.js"></script>
+
+    <!-- ANIMATE CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+
+    <title> Tu Arbol </title>
+</head>
+
+<body>
+
+    <div class="sky">
+
+    </div>
+
+    <div class="nav">
+        
+    </div>
+
+    <div class="contenido">
+
+        <div class="fondo">
+            
+            <!-- IMAGEN DE FONDO -->
+            <div class="contenido1">
+                <h1 class="animate_animate_heartBeat" style="color: #76b381;">Tu Árbol HOY</h1>
+                <h3 style="color: #76b381;">Registra un árbol y adóptalo,</h3>
+                <p>Si eres persona natural y tienes un arbol que quieres apadrinar o adoptar, dejanos tus datos y
+                    algunas
+                    caracteristicas claves de tu arbol, es decir, tu legado desde HOY para el fututro y las nuevas
+                    generaciones.</p>
+            </div>
+
+            <br>
+            <form id="form" method="post" class="needs-validation" novalidate>
+
+                <div class="tarjeta1">
+                    <img src="media/1ra tarjeta.PNG">
+                </div>
+
+                <br>
+
+                <div class="tarjeta2">
+                    <img src="media/2da tarjeta.PNG">
+                </div>
+
+                <br> <br> <br>
+                <br> <br>
+
+                <div class="tarjeta3">
+                    <img src="media/3ra tarjeta.PNG">
+                </div>
+
+                <br> <br> <br> 
+                <br> <br> <br>
+                <br> <br> <br>
+                <br> <br> <br>
+                <br> <br> <br>
+                <br> <br>
+
+                <div class="tarjeta4">
+                    <img src="media/4ta tarjeta.PNG">
+                </div>
+                
+
+                <div class="division1">
+
+                    <h3>Persona que realiza la siembra</h3>
+                    <br>
+                    <h4>Cuéntanos sobre tí</h4>
+
+                    <div class="row">
+
+                        <div class="col-12">
+
+                            <div class="row">
+                                <div class="col-6">
+                                    <label class="form-label" for="">Nombres</label>
+                                    <input class="form-control" type="text" placeholder="Tu nombre completo" id="nombre"
+                                        required>
+                                </div>
+
+                                <div class="col-6">
+                                    <label class="form-label" for="">Apellidos</label>
+                                    <input class="form-control" type="text" placeholder="Tus apellidos" id="apellidos"
+                                        required>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="row">
+
+                                <div class="col-3">
+                                    <label class="form-label" for="">Identificación</label>
+                                    <input class="form-control" type="number" name="" id="iden"
+                                        placeholder="00.000.000.000" required>
+                                </div>
+
+                                <div class="col-3">
+                                    <label class="form-label" for="">Rango de edad</label>
+                                    <select class="form-select form-control" name="" id="edad" required>
+                                        <option selected value="0 a 4">0 a 4 años</option>
+                                        <option value="10 a 20">10 a 20 años</option>
+                                        <option value="20 a 30">20 a 30 años</option>
+                                        <option value="30 a 40">30 a 40 años</option>
+                                        <option value="+40">40 o mas</option>
+                                    </select>
+
+                                </div>
+
+                                <div class="col-6">
+                                    <label class="form-label" for="">Correo</label>
+                                    <input class="form-control" type="email" name="" id="email" required>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="division2">
+
+                    <h3>2.Detalles de la siembra</h3>
+                    <br>
+
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="row">
+
+                                <div class="col-6">
+                                    <h4>Cuándo sembraste?</h4>
+                                    <label class="form-label" for="">Fecha de realización de la siembra</label>
+                                    <input class="form-control" type="date" name="" id="fecha1" required>
+                                </div>
+
+                                <div class="col-4">
+                                    <h4>¿Qué sembraste?</h4>
+                                    <label class="form-label" for="">Especie sembrada</label>
+                                    <input class="form-control" type="text" name="" id="especie" required>
+                                        
+                                    </select>
+                                </div>
+
+                                <div class="col-2">
+                                    <label style="margin-top: 45px;" class="form-label" for="">Cantidad</label>
+                                    <input class="form-control" type="number" name="" id="cantidad" required>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+
+                    <div class="row">
+                        <h4>¿Dónde sembraste?</h4>
+
+                        <div class="col-12">
+                            <div class="row">
+                                <div class="col-3">
+                                    <label class="form-label" for="">Departamento</label>
+                                    <select class="form-select form-control" name="" id="depart" required>
+                                        <option selected>Elija uno</option>
+                                        <option value="Amazonas">Amazonas</option>
+                                        <option value="Antioquía">Antioquía</option>
+                                        <option value="Arauca">Arauca</option>
+                                        <option value="Atlántico">Atlántico</option>
+                                        <option value="Bolívar">Bolívar</option>
+                                        <option value="Boyacá">Boyacá</option>
+                                        <option value="Caldas">Caldas</option>
+                                        <option value="Caquetá">Caquetá</option>
+                                        <option value="Casanare">Casanare</option>
+                                        <option value="Cauca">Cauca</option>
+                                        <option value="Cesar">Cesar</option>
+                                        <option value="Chocó">Chocó</option>
+                                        <option value="Córdoba">Córdoba</option>
+                                        <option value="Cundinamarca">Cundinamarca</option>
+                                        <option value="Guainía">Guainía</option>
+                                        <option value="Guaviare">Guaviare</option>
+                                        <option value="Huila">Huila</option>
+                                        <option value="La Guajira">La Guajira</option>
+                                        <option value="Magdalena">Magdalena</option>
+                                        <option value="Meta">Meta</option>
+                                        <option value="Nariño">Nariño</option>
+                                        <option value="Norte de Santander">Norte de Santander</option>
+                                        <option value="Putumayo">Putumayo</option>
+                                        <option value="Quindío">Quindío</option>
+                                        <option value="Risaralda">Risaralda</option>
+                                        <option value="San Andrés y Providencia">San Andrés y Providencia</option>
+                                        <option value="Santander">Santander</option>
+                                        <option value="Sucre">Sucre</option>
+                                        <option value="Tolima">Tolima</option>
+                                        <option value="Valle del Cauca">Valle del Cauca</option>
+                                        <option value="Vaupés">Vaupés</option>
+                                        <option value="Vichada">Vichada</option>
+                                    </select>
+
+                                </div>
+                                <div class="col-4">
+                                    <label class="form-label" for="">Municipio</label>
+                                    <input class="form-control" type="text" name="" id="muni" required>
+                                </div>
+
+                                <div class="col-5">
+                                    <label class="form-label" for="">Centros poblados más cercanos</label>
+                                    <input class="form-control" type="text" name="" id="cpoblado" required>
+                                </div>
+                            </div>
+
+                            <div class="mapa">
+                                <!-- Aqui va el mapa -->
+                                <script src="https://js.arcgis.com/4.19/"> </script>
+                                <script src="mapa.js"></script>
+                                <div id="map8"></div>
+
+                            </div>
+                        </div>
+
+                        <div class="row">
+
+                            <div class="col-6">
+                                <label class="form-label" for="">Latitud</label>
+                                <input class="form-control" id="lt" type="text" name=""
+                                    placeholder="Cargado desde este dispositivo..." required>
+                            </div>
+                            <div class="col-6">
+                                <label class="form-label" for="">Longitud</label>
+                                <input class="form-control" id="lg" type="text" name=""
+                                    placeholder="Cargado desde este dispositivo..." required>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="division3">
+
+                    <h3>3.Evidencia de la siembra</h3>
+                    <br>
+                    <h4>Fotografía de tu árbol o de la siembra</h4>
+                    <p>Carga una imagen desde tu dispositivo</p>
+                    <input class="btn btn-secondary form-control" accept=".jpg" type="file" name="" id="fileImage">
+                    <br>
+                </div>
+
+                <div class="division4">
+                    <h3>4.Comentarios sobre la siembra</h3>
+                    <br>
+                    <h5>Agrega cualquier información adicional</h5>
+
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="6"></textarea>
+
+                </div>
+
+                <div class="division5">
+                    <h3>5.Cuentales a TODOS sobre tu legado</h3>
+                    <br>
+                    <h4>¿Qué quieres hacer?</h4>
+
+                    <img src="media/redes.PNG" alt="redes" width="100%">
+
+                </div>
+
+                <div class="division6">
+
+                    <h3>Tu privacidad y manejo de tus datos</h3>
+                    <br>
+                    <input class="form-check-input" type="checkbox" id="">
+
+                    <label class="form-check-label" for="">
+                        <h5 style="color:#3366cb">Acepto la politica de privacidad</h5>
+                    </label>
+                    <p style="font-size: 12px;">Y me declaro responsable de la veracidad de estos datos y podrán ser
+                        verificados y validados por el MinAmbiente</p>
+
+
+
+
+                    <input class="form-check-input" type="checkbox" id="">
+
+                    <label class="form-check-label" for="">
+                        <h5 style="color:#3366cb">Soy persona natural</h5>
+                    </label>
+                </div>
+
+                <input class="btn btn-primary" type="submit" value="Enviar">
+
+            </form>
+            <br>
+            <img src="media/footer.PNG" width="100%" alt="">
+
+        </div>
+    </div>
+</body>
+
+<script src="registro.js"></script>
+</html>
